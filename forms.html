@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <form method="post" action="login.php">
+            <p>
+                <label>Username</label>
+                <br>
+                <input type="text" name="username" value="admin">
+            </p>
+            <p>
+                <label>Password</label>
+                <br>
+                <input type="password" name="password" value="admin">
+            </p>
+            <p>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember</label>
+            </p>
+            <p>
+                <input type="submit" name="login" value="Login">
+            </p>
+        </form>
+
+        <form>
+            <input type="text">
+            <input type="password">
+            <input type="number">
+            <input type="email">
+            <input type="file">
+            <input type="checkbox">
+            <input type="radio">
+            <input type="submit">
+            <input type="reset">
+            <input type="button">
+            <textarea rows="5" cols="20">A big load of text</textarea>
+            <select>
+                <option value="Windows">Windows</option>
+                <option value="Mac">Mac</option>
+                <option value="Linux">Linux</option>
+            </select>
+        </form>
+
+        <form method="post" action="profile.php">
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>Username</td>
+                    <td>:</td>
+                    <td><input type="text" name="username" value=""></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" value=""></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="password" value=""></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" id="gender1" value="Male" checked> <label for="gender1">Male</label>
+                        <input type="radio" name="gender" id="gender2" value="Female"> <label for="gender2">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Marital Status</td>
+                    <td>:</td>
+                    <td>
+                        <select name="maritalstatus">
+                            <option value="Single">Single</option>
+                            <option value="Married" selected>Married</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td><textarea name="address" rows="5" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="hobby[]" id="hobby1" value="Cricket" checked> <label for="hobby1">Cricket</label> <br>
+                        <input type="checkbox" name="hobby[]" id="hobby2" value="Watch Tv" checked> <label for="hobby2">Watch Tv</label> <br>
+                        <input type="checkbox" name="hobby[]" id="hobby3" value="Play Game"> <label for="hobby3">Play Game</label> <br>
+                        <input type="checkbox" name="hobby[]" id="hobby4" value="Internet Surfing"> <label for="hobby4">Internet Surfing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" name="save" value="Save">
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
